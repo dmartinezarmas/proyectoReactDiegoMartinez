@@ -1,0 +1,10 @@
+[
+    {"id":1, "title": "Coversol", "description": "Lona vinílica microperforada de alta resistencia", "image": "./assets/lonas/coversol.png", "price": 7500, "unidad": "metro lineal", "categoria": "vinílica"},
+    {"id":2, "title": "Nildatex Standard", "description": "Lona vinílica impermeable de alta resistencia con protección UV", "image": "./assets/lonas/nildatexStandar.png", "price": 9500, "unidad": "metro lineal", "categoria": "vinílica"},
+    {"id":3, "title": "Hulytego", "description": "Lona vinílica impermeable de alta resistencia", "image": "./assets/lonas/hulytego.png", "price": 8000, "unidad": "metro lineal", "categoria": "vinílica"},
+    {"id":4, "title": "Sauleda", "description": "Lona sintética fina premium, repelente al agua, con resitencia UV", "image": "./assets/lonas/sauleda.png", "price": 15000, "unidad": "metro lineal", "categoria": "sintética"},
+    {"id":5, "title": "Media Sombra Premium", "description": "Media sombra de alto gramaje, tejido cerrado, resistente, 70% de opacidad", "image": "./assets/lonas/mediaSombra.png", "price": 5000, "unidad": "metro lineal", "categoria": "media sombra"},
+    {"id":6, "title": "Zonda 900", "description": "Lona vinílica de alta resistencia antidesgarre", "image": "./assets/lonas/zonda900.png", "price": 8500, "unidad": "metro lineal", "categoria": "vinílica"},
+    {"id":7, "title": "Zonda 1100", "description": "Lona vinílica de alta resistencia antidesgarre con protección UV", "image": "./assets/lonas/zonda1100.png", "price": 9500, "unidad": "metro lineal", "categoria": "vinílica"},
+    {"id":8, "title": "Algodón 8", "description": "Lona de algodón natural alta densidad 15grcm2", "image": "./assets/lonas/algodon8.png", "price": 9500, "unidad": "metro lineal", "categoria": "algodón"}
+]

@@ -6,9 +6,9 @@ const CartWidget = () => {
            <img src={iconPay} width={40} alt="icono de tarjeta de credito"/>
            <button type="button" className="btn btn-dark position-relative m-2">
             Pedidos
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+            <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
                 0
-                <span class=""> por pagar</span>
+                <span className=""> por pagar</span>
             </span>
             </button>
         </div>
