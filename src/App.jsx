@@ -3,19 +3,20 @@ import './App.css'
 import NavBar from './components/navBar'
 import ItemListConteiner from './components/ItemListConteiner'
 import {BrowserRouter, Routes, Route} from "react-router-dom"
+import ItemCount from './components/ItemCount'
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+      {/* <BrowserRouter> */}
       <NavBar/>
-        <Routes>
+        {/* <Routes>
           <Route>
 
           </Route>
 
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
       <ItemListConteiner greeting={"⚠ Sitio Web en desarrollo, seguinos en nuestras Redes "}/>
     </>
   )
