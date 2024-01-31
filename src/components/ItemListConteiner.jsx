@@ -3,24 +3,25 @@ import iconIG from "../assets/instagram.svg"
 import arrayProductos from "./json/productos.json"
 import ItemList from "./ItemList";
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 const ItemListConteiner = ({greeting}) => {
     const [items, setItems] = useState([])
+    const {id} = useParams()
     useEffect(() => {
         const promesa = new Promise((resolve) => {
             setTimeout (() => {
-                resolve (arrayProductos)
-            }, 2000)
+                resolve (id ? arrayProductos.filter(item => item.id == id) : arrayProductos )
+            }, 1000)
         })
         promesa.then(data => {
             setItems(data)
         })
-    }, [])
+    }, [id])
     return(
         <div>
             <div>
                 <ItemList items = {items}/>
-                <ItemCount stock={10}/>
             </div>
             <div className="container my-5 text-center">
                 <div className="alert alert-dark" role="alert">

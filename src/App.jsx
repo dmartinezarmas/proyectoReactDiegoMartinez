@@ -2,22 +2,20 @@ import { useState } from 'react'
 import './App.css'
 import NavBar from './components/navBar'
 import ItemListConteiner from './components/ItemListConteiner'
+import ItemDetailContainer from './components/ItemDetailContainer'
 import {BrowserRouter, Routes, Route} from "react-router-dom"
-import ItemCount from './components/ItemCount'
 
 function App() {
   return (
     <>
-      {/* <BrowserRouter> */}
       <NavBar/>
-        {/* <Routes>
-          <Route>
-
-          </Route>
-
+      <BrowserRouter>
+        <Routes>
+          <Route path={"/"} element={<ItemListConteiner greeting={"⚠ En desarrollo, seguinos en nuestras Redes "}/>} />
+          <Route path={"/category/:id"} element={<ItemListConteiner />} />
+          <Route path={"/item/:id"} element={<ItemDetailContainer/>} />
         </Routes>
-      </BrowserRouter> */}
-      <ItemListConteiner greeting={"⚠ Sitio Web en desarrollo, seguinos en nuestras Redes "}/>
+      </BrowserRouter>
     </>
   )
 }
