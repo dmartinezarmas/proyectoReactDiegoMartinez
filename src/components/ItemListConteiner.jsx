@@ -12,7 +12,7 @@ const ItemListConteiner = ({greeting}) => {
         const promesa = new Promise((resolve) => {
             setTimeout (() => {
                 resolve (id ? arrayProductos.filter(item => item.id == id) : arrayProductos )
-            }, 1000)
+            }, 2000)
         })
         promesa.then(data => {
             setItems(data)

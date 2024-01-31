@@ -1,13 +1,13 @@
 import { NavLink } from "react-router-dom";
 import CartWidget from "./CartWidget";
-import logoLonera from "../assets/logoLonera.webp"
+import Brand from "./Brand";
 
 const NavBar = () => {
     return(
         <div>
             <div className="d-flex justify-content-center">
                 <div>
-                    <img src={logoLonera} width={100} alt="logo lonera hispano argentina" />
+                    <Brand/>
                 </div>
                 <div className="col-md-10 bg-dark">
                     <ul className="nav">

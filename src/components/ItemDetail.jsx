@@ -14,7 +14,7 @@ const ItemDetail = () => {
                         <h1>{item.title}</h1>
                         <h4><b>{item.price}</b></h4>
                         <h4>{item.description}</h4>
-                        <ItemCount stock={10}/>
+                        <ItemCount stock={item.stock}/>
                     </div>
                 </div>
             </div>

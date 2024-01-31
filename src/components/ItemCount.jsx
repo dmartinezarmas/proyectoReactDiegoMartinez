@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ItemCount = ({stock}) => {
     const [counter, setCounter] = useState(0)
@@ -19,6 +19,9 @@ const ItemCount = ({stock}) => {
             setCounter(0)
         }
     }
+    useEffect(() => {
+        setItemStock(stock)
+    },[stock])
     return(
         <div className="text-center">
             <div className="btn-group" role="group" aria-label="Basic example">
