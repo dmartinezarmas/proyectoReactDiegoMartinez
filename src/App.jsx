@@ -1,19 +1,18 @@
-import { useState } from 'react'
 import './App.css'
-import NavBar from './components/navBar'
-import ItemListConteiner from './components/ItemListConteiner'
+import ItemListContainer from './components/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer'
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import RouteError from './components/RouteError'
+import NavBar from './components/navBar'
 
 function App() {
   return (
     <>
-      <NavBar/>
       <BrowserRouter>
+        <NavBar/>
         <Routes>
-          <Route path={"/"} element={<ItemListConteiner greeting={"⚠ En desarrollo, seguinos en nuestras Redes "}/>} />
-          <Route path={"/category/:id"} element={<ItemListConteiner />} />
+          <Route path={"/"} element={<ItemListContainer />} />
+          <Route path={"/category/:id"} element={<ItemListContainer />} />
           <Route path={"/item/:id"} element={<ItemDetailContainer/>} />
           <Route path={"*"} element={<RouteError/>} />
         </Routes>

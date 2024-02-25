@@ -5,14 +5,14 @@ import ItemList from "./ItemList";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-const ItemListConteiner = ({greeting}) => {
+const ItemListContainer = () => {
     const [items, setItems] = useState([])
     const {id} = useParams()
     useEffect(() => {
         const promesa = new Promise((resolve) => {
             setTimeout (() => {
                 resolve (id ? arrayProductos.filter(item => item.id == id) : arrayProductos )
-            }, 2000)
+            }, 0)
         })
         promesa.then(data => {
             setItems(data)
@@ -24,11 +24,6 @@ const ItemListConteiner = ({greeting}) => {
                 <ItemList items = {items}/>
             </div>
             <div className="container my-5 text-center">
-                <div className="alert alert-dark" role="alert">
-                    <h1 className="display-6">
-                    {greeting}
-                    </h1>
-                </div>
                 <a href="http://www.facebook.com/lonerahispano">
                     <img src={iconFB} alt="logo de facebook" width={40}/>
                 </a>
@@ -39,4 +34,4 @@ const ItemListConteiner = ({greeting}) => {
         </div>
     )
 }
-export default ItemListConteiner;
+export default ItemListContainer;
