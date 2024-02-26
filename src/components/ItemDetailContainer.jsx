@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ItemDetail from "./ItemDetail";
+import arrayProductos from "./json/productos.json"
 import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = () => {
@@ -19,7 +20,6 @@ const ItemDetailContainer = () => {
     }, [id]);
     return (
         <>
-            <h1>Item Detail Container</h1>
             <ItemDetail item = {item} />
         </>
     )

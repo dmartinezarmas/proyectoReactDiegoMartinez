@@ -1,8 +1,8 @@
 const RouteError = () => {
     return (
-        <div className="row">
+        <div className="row text-center">
             <div className="col">
-                <h1>!!!ERROR, VUELVA AL INICIO¡¡¡</h1>
+                <h1>🥴!!!ERROR, VUELVA AL INICIO¡¡¡🧐</h1>
             </div>
         </div>
     )
