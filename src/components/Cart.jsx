@@ -28,6 +28,14 @@ const Cart = () => {
                     <div className="col text-center">
                         <table className="table">
                             <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td>PRODUCTO</td>
+                                    <td>PRECIO</td>
+                                    <td>CANTIDAD</td>
+                                    <td>SUBTOTAL</td>
+                                    <td></td>
+                                </tr>
                                 {cart.map(producto =>
                                     <tr key={producto.id}>
                                         <td><img src={producto.image} alt={producto.title} width={200} /></td>
@@ -39,8 +47,8 @@ const Cart = () => {
                                     </tr>
                                 )}
                                 <tr>
-                                    <td colSpan={4}>Suma Total</td>
-                                    <td>${SumaTotalProductos()}</td>
+                                    <td colSpan={4}><b>Suma Total</b></td>
+                                    <td><b>${SumaTotalProductos()}</b></td>
                                     <td>&nbsp;</td>
                                     <td><p><b>Eliminar Carrito</b></p><a href="#" onClick={() => {clear()}}>
                                         <img src={basura} className="m-2" width={50} alt="Eliminar Carrito" title="Eliminar Carrito"  /></a>
